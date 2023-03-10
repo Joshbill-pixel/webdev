@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: lightcyan;
+        }
+        
+        fieldset {
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">REG Form:</h1>
+    <fieldset style="width: fit-content;">
+        <legend>Profile</legend>
+        <label for=" fullname">Fullname:</label><br>
+        <input type="text" required name="fullname" placeholder="fullname"><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" required name="email" placeholder="abc@gmail.com"><br><br>
+        <label for="phone_no ">Phone number:</label><br>
+        <input type="tel" required name="phone_no" placeholder="phone number"><br><br>
+        <label for="password">Password:</label><br>
+        <input id="text" type="password" required name="password" placeholder="password">
+        <p>Select gender:</p>
+        <label for="gender">Male</label>
+        <input type="radio" name="gender" required value="male">
+        <label for="gender">Female</label>
+        <input type="radio" name="gender" required value="female">
+        <label for="gender">Other</label>
+        <input type="radio" name="gender" required value="other"><br><br>
+        <a href="success.html"><input type="submit" required name="submit" value="submit"></a>
+    </fieldset>
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+nav{
+    background: #042844;
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.logo:hover{
+    color: #ec930e;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+a:hover {
+    background: none;
+    color: #0e7ed3;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 25px;
+    font-family: sans-serif;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+.checkbtn:hover{
+    color: #ec930e;
+}
+#check{
+    display: none;
+}
+@media (max-width: 958px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 858px) {
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 50%;
+        height: 100vh;
+        border: solid rgba(106, 106, 197, 0.363);
+        background: rgba(9, 56, 95, 0.918);
+        top: 80px;
+        left: -100%;
+        text-align: left;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        margin-left: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover{
+        background: none;
+        color: #ec930e;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+section{
+    background: url(glow.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+section .text{
+    text-align: center;
+}
+section .center{
+    margin: auto;
+    width: 300px;
+    background: #0466b1ad;
+    padding: 20px;
+    height: 30vh;
+    border-radius: 10px;
+}
+section h1{
+    font-family: sans-serif;
+    font-size: 90px;
+    line-height: 3;
+    font-weight: bold;
+}
+section h2{
+    font-family: sans-serif;
+    font-size: 80px;
+    margin-top: -89px;
+    color: rgb(34, 74, 206);
+}
+section p{
+    font-family: sans-serif;
+    margin-top: 20px;
+    font-weight: bold;
+    color: rgb(53, 51, 51);
+}
+.fill{
+    width: 100%;
+    height: 30px;
+    border-radius: 8px;
+    border-color: #0b65aaa6;
+    margin-top: 10px;
+    padding: 9px;
+}
+.fill:hover{
+    background: rgb(222, 222, 236);
+    color: #02223a;
+    transition: all .3s;
+}
+.btn{
+    width: 40%;
+    height: 4vh;
+    border-radius: 15px;
+    border-color: #0a78cc;
+    margin-top: 10px;
+    margin-left: 69px;
+}
+.btn:hover, .demo:hover{
+    background-color: #d3a31e;
+}
+.center p{
+    text-align: center;
+    font-family: sans-serif;
+    margin-top: -10px;
+    color: #01192b;
+}
+.demo{
+    margin-top: 7px;
+    margin-left: 69px;
+    width: 40%;
+    height: 4vh;
+    border-radius: 15px;
+    border-color: #0a78cc;
+}
+.copy{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(1, 1, 54);
+}
+@media (max-width: 958px){
+    section h1{
+        font-size: 40px;
+    }
+    section h2{
+        font-size: 40px;
+        margin-top: -40px;
+    }
+    section p{
+        font-weight: bold;
+        color: black;
+    }
+    section .center{
+        width: 250px;
+    }
+}
